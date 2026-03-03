@@ -17,7 +17,9 @@ class TransformerPlayer(Player):
         chess.KING: 0,
     }
 
-    def __init__(self):
+    def __init__(self, name: str = "TransformerPlayer"):
+        super().__init__(name)
+        
         self.model_name = "gpt2"
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.scorer = scorer.IncrementalLMScorer(self.model_name, device=self.device)
