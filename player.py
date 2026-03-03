@@ -6,8 +6,8 @@ from minicons import scorer
 
 from chess_tournament.players import Player
 
-
-class GPT2HybridBot:
+class TransformerPlayer(Player):
+    
     PIECE_VALUES = {
         chess.PAWN: 1,
         chess.KNIGHT: 3,
@@ -129,12 +129,6 @@ class GPT2HybridBot:
 
         self.last_move = best_move.uci()
         return best_move.uci()
-
-
-class TransformerPlayer(Player):
-    def __init__(self, name: str = "GPT2Hybrid"):
-        super().__init__(name)
-        self.inner = GPT2HybridBot()
 
     def get_move(self, fen: str) -> Optional[str]:
         try:
