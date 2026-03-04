@@ -134,6 +134,6 @@ class TransformerPlayer(Player):
 
     def get_move(self, fen: str) -> Optional[str]:
         try:
-            return self.inner.choose_move(fen)
+            return self.choose_move(fen)
         except Exception:
             return None
