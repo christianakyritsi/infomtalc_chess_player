@@ -73,8 +73,7 @@ The model consistently outperformed baseline agents, including simplified engine
 
 ## 📂 Project Structure
 
-* `transformer_player.py` — main implementation of the hybrid agent
-* `notebook.ipynb` — experiments and evaluation
+* `player.py` — main implementation of the hybrid agent
 
 ---
 
@@ -88,7 +87,7 @@ This project demonstrates that language models can be used beyond text generatio
 
 You can run the notebook in Google Colab:
 
-[Add your Colab link here]
+[(https://colab.research.google.com/drive/1C2T2r-MX_n-mEDLb1Ptd298Fx0WzSCcF)]
 
 ---
 
